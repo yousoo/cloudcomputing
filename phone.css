@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans KR", "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+    min-height: 100vh;
+    color: #111827;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.card {
+    width: 100%;
+    max-width: 520px;
+    background: white;
+    border-radius: 24px;
+    padding: 42px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #374151;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 999px;
+    background: #1e3a8a;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+.back-link {
+    display: block;
+    margin-top: 24px;
+    text-align: center;
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
