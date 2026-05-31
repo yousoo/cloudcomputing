@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Segoe UI","Noto Sans KR",sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    color:white;
+    min-height:100vh;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:800;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+}
+
+nav a:hover{
+    color:#bfdbfe;
+}
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:70vh;
+    padding:30px;
+}
+
+.hero-box{
+    max-width:900px;
+    text-align:center;
+
+    background:rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    padding:60px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,0.3);
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    background:rgba(255,255,255,0.15);
+    border-radius:999px;
+    margin-bottom:25px;
+}
+
+h1{
+    font-size:60px;
+    margin-bottom:25px;
+}
+
+.highlight{
+    color:#bfdbfe;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:999px;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:white;
+    color:#1e3a8a;
+}
+
+.btn-secondary{
+    border:1px solid white;
+    color:white;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    padding:0 8% 60px;
+}
+
+.card{
+    background:rgba(255,255,255,0.12);
+    border-radius:20px;
+    padding:30px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+}
