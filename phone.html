@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>전화번호 등록</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/phone.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>전화번호 등록</h1>
+        <p class="subtitle">이름, 전화번호, 메모를 입력하세요.</p>
+
+        <form action="/phone" method="post">
+            <div class="form-group">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="예: 홍길동" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">전화번호</label>
+                <input type="text" id="phone" name="phone" placeholder="예: 010-1234-5678" required>
+            </div>
+
+            <div class="form-group">
+                <label for="memo">메모</label>
+                <textarea id="memo" name="memo" rows="5" placeholder="메모를 입력하세요"></textarea>
+            </div>
+
+            <button type="submit">등록하기</button>
+        </form>
+
+        <a href="/" class="back-link">메인으로 돌아가기</a>
+    </div>
+</div>
+
+</body>
+</html>
