@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 작성</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="top-bar">
+    <h1>Azure Instagram</h1>
+    <nav>
+        <a href="/">홈</a>
+        <a href="/profile/testuser">마이페이지</a>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="write-box">
+        <h2>게시글 작성</h2>
+
+        <form method="post" action="/post/write" enctype="multipart/form-data">
+            <label>사진 업로드</label>
+            <input type="file" name="image" accept="image/*" required>
+
+            <label>내용</label>
+            <textarea name="content" rows="6" placeholder="내용을 입력하세요." required></textarea>
+
+            <button type="submit">게시글 등록</button>
+        </form>
+    </section>
+</main>
+
+</body>
+</html>
