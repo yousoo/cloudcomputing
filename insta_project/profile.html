@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="top-bar">
+    <h1>Azure Instagram</h1>
+    <nav>
+        <a href="/">홈</a>
+        <a href="/post/write">글쓰기</a>
+        <a href="/logout">로그아웃</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section class="profile-box">
+        <div class="profile-image"></div>
+
+        <div class="profile-info">
+            <h2>testuser</h2>
+            <p>게시글 3개</p>
+            <p>안녕하세요. Azure Instagram 프로젝트입니다.</p>
+        </div>
+    </section>
+
+    <section class="grid-gallery">
+        <img src="https://via.placeholder.com/300" alt="사진1">
+        <img src="https://via.placeholder.com/300" alt="사진2">
+        <img src="https://via.placeholder.com/300" alt="사진3">
+    </section>
+
+</main>
+
+</body>
+</html>
