@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Azure Instagram</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="top-bar">
+    <h1>Azure Instagram</h1>
+    <nav>
+        <a href="/">홈</a>
+        <a href="/post/write">글쓰기</a>
+        <a href="/profile/testuser">마이페이지</a>
+        <a href="/login">로그인</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section class="post-card">
+        <div class="post-header">
+            <strong>testuser</strong>
+        </div>
+
+        <img src="https://via.placeholder.com/600x400" class="post-image" alt="게시글 이미지">
+
+        <div class="post-body">
+            <p><strong>testuser</strong> 오늘 Azure 프로젝트 시작!</p>
+            <p class="like">좋아요 12개</p>
+
+            <div class="comments">
+                <p><strong>user1</strong> 멋집니다!</p>
+                <p><strong>user2</strong> 수업용으로 좋네요.</p>
+            </div>
+
+            <form class="comment-form">
+                <input type="text" placeholder="댓글 달기...">
+                <button type="submit">등록</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
